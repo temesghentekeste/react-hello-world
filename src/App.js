@@ -10,6 +10,7 @@ import EventBinding from './components/EventBinding';
 import Parent from './components/Parent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './components/ListRendering';
+import IndexAsAKey from './components/IndexAsAKey';
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
     <EventBinding/>
     <Parent/>
     <ConditionalRendering/>
-    */}
     <ListRendering/>
+  */}
+  <IndexAsAKey/>
     </div>
   );
 }

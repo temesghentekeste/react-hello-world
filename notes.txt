@@ -1,0 +1,103 @@
+JSX
+ * JavaScript XML (JSX) - extension to the javascript language syntax
+ * write xml like code for elements and components
+ * jsx tags have: tagname, attributes and children
+ * jsx is not a necessity to write react application
+ * jsx makes your react code simple and elegant
+ * jsx ultimately transpiles to pure JavaScript which is understood by the browser
+ * Differences:
+ *  class ==. className
+ *  for ==> htmlFor
+ *  onclick ==> onClick
+ *  tabindex ==> tabIndex
+ *  etc
+ Demo example: JSX.js
+ *********************************************************************
+ props vx state
+ props
+  1. they get passed to the component
+  2. they are immutable
+  3. props ----> functional component or this.props ---> class component
+  4. can be considered as function parameters
+
+state
+ 1. managed within the component
+ 2. can be changed
+ 3. useStat Hook ---> functional component or this.state ---> class component
+ 4. can be considred as local variables of a function
+
+ Example: Message.js
+ *********************************************************************
+
+ setState
+  1. Always make use of the the set state and never modify state directly
+  2. Code has to be executed after the state  has been executed? place the code in a callback function which is the second argument to the setState method
+  3. When you have to update state based on the previous state value, pass in a function as an argument instead of the regular object
+
+  Demo example: Counter.js
+  ********************************************************************
+
+  Destructuring: It is a feature of ES6 which enables us to unpack values from arrays or properties from objects into distinct variables. In react destructuring improves code readability
+  Ex. Hello.js and Welcome.js
+  ********************************************************************
+  Event binding
+    It is neccessary to bind events because this is undefined if we do do the same. This is JavaScript behaviour and not React specific.
+    In React event binding can happend in different ways:
+      1. Using bind keyword and bind the event handler in the render  
+         method. 
+         * Now, if console log the this keyword it will no longer be undefined rather it will point to the component instance.
+         * This approach has some performance implication on large systems with lots of nested children components because as the state changes the render() is called. And it creates a new event handler on each re-render.
+
+      2. To use arrow functions in the render() method. This approach also has the same problem as the first.
+
+      3. Binding the event handler in the constructor as opposed binding in the render() method; it is what you see in the official React documentation. Since the binding happer in the constructor method this is better than the render method approach.
+
+      4. Using arrow functions in a class property.
+
+      summary: First approach is something you would never want to use. Although appoach 2 is similar to 1ˢᵗ one, it is by far the easiest way to pass parameters. React documentation suggests 3 or 4; and as approach 4 is experienmental feature it is suggested to use 3ʳᵈ.
+      create-react supports the 4ᵗʰ and very soon it will be the go-to approach.
+
+      Example: EventBinding.js
+  *************************************************************************************************
+  Method as props
+  Parent.js and Child.js
+  ********************************************************************
+  *****************************
+  Conditional Rendering: There are four approaches
+    1. if/else 
+    2. Element variables
+      let message = this.state.isLoggedin ? "Welcome Temesghen" : "Welcome Guest"
+    return (
+      <div>
+        <h1>{message}</h1>
+      </div>
+    )
+    3. Ternary conditional operator: keeps the code simple and readable
+      return(
+        this.state.isLoggedin ? <h1>Welcome Temesghen</h1> : <h1>Welcome Guest</h1>
+      )
+    4. Short circuit operator
+       return(
+      this.state.isLoggedin && <h1>Welcome Temesghen</h1>
+    )
+    example: ConditionalRendering.js
+**********************************************************************
+List Rendering: 
+**********************************
+  - A key is a special string you need to include when creating lists of elements
+  - It gives an element a stable identiy
+
+  - Every list element must have a key
+  - It is used by React to track changes for DOM update and it helps for the UI to be updated efficiently
+  - key is not a prop and cannot be modified.
+
+  example: ListRendering.js
+**********************************************************************
+Index As a Key as Anti Pattern
+When to use index as a key:
+  1. the items in your list do not have a unique identiy
+  2. the list is a static and will never change
+  3. the list will never be reordered or filtered
+You can use one of the npm packages that generates a list or you can use hashing value existing value from one of the existing properties
+
+  
