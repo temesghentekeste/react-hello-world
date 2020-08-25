@@ -1,0 +1,11 @@
+.primary {
+  color: green;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.danger {
+  color: red;
+  font: 1em sans-serif;
+  font-weight: normal;
+}

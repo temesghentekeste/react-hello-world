@@ -11,6 +11,9 @@ import Parent from './components/Parent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './components/ListRendering';
 import IndexAsAKey from './components/IndexAsAKey';
+import Stylesheets from './components/Stylesheets'
+import Inline from './components/Inline';
+import CssModules from './components/CssModules';
 
 function App() {
   return (
@@ -32,8 +35,12 @@ function App() {
     <Parent/>
     <ConditionalRendering/>
     <ListRendering/>
-  */}
   <IndexAsAKey/>
+  */}
+   <Stylesheets primary={true}/>
+   <Stylesheets primary={false}/>
+   <Inline/>
+   <CssModules/>
     </div>
   );
 }

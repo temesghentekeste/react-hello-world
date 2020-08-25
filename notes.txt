@@ -99,5 +99,14 @@ When to use index as a key:
   2. the list is a static and will never change
   3. the list will never be reordered or filtered
 You can use one of the npm packages that generates a list or you can use hashing value existing value from one of the existing properties
+********************************************************************
+Styling React components
+************************
+1. CSS Stylesheet: we can use backticks for multiple classes
+  ex. Stylesheets.js
+2. Inline Styling: ex. Inline.js
+3. CSS Modules: classes are locally scoped by default. Normal css file applies to child elements and it can lead to css confilict.  
+4. CSS In JS Libraries
+
 
   
