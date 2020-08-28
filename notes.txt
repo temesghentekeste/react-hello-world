@@ -118,4 +118,53 @@ Controlled React component
 
 If you don't have a form you can submit the form attaching the onSubmit event to the button.
 Example: Form.js
+**********************************************************************
+
+Life Cycle methods: 
+  mounting: 
+    - when winstance of a component is being created or inserted into the DOM
+    - methods: constructor, static getDerivedStateFromProps, render and componentDidMount
   
+  updating: 
+    - when a component is being re-rendered as a result of changes to its props or state
+    - methods: getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, and componentDidUpdate 
+  
+  unmounting: 
+    - when a component is being removed from the DOM 
+    - methods: componentWillUnmount
+  
+  error handling:
+    - when there is an error in rendering, in a life cycle method or costructor of any child component
+    - static getDerivedStateFromErrors and componentDidCatch
+
+  Mounting LifeCycle Methods
+    - Methods called when instance of a component is being created or inserted into the DOM
+    - Methods in order:
+    1. Constructor 
+      - constructor(props) - a special fuction called whenever a new component is being created
+      - used:
+         - Initialize state
+         - binding event handlers
+      - not used for: side effects. Ex. HTTP request
+      - other important points:
+        - super(props): call base class constructor
+        - we can use this.state directly
+    
+    2. static getDerivedStateFromProps(porps, state)
+      - rarely used LifeCycle method
+      - when the state of a component depends on changes in props over time
+      - as it is a static method this keyword cannot be used, to set the state you just need to return an object representing the new state
+      - don't use side effects
+
+    3. render()
+      - only required method in a class component
+      - read props and state and return the JSX that represents the UI
+      - pure function, for a given props and state it should always render the same UI
+      -DO NOT change the state of the state or intereact with DOM or make ajax calls.
+      - since it contains children objects, the lifecycle methods are also executed.
+    4. componentDidMount()
+      - the last LifeCycle method during mounting phase
+      - called once during the lifecycle of the whole component
+      - invoded immeditely after a component and all its children components have been rendered to the DOM
+      - it is the perfect method to cause side effects. Ex. intereact with the DOM or perform ajax call to load data
+      

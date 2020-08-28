@@ -15,6 +15,7 @@ import Stylesheets from './components/Stylesheets'
 import Inline from './components/Inline';
 import CssModules from './components/CssModules';
 import Form from './components/Form'
+import LifeCycleA from './components/LifeCycleA';
 
 function App() {
   return (
@@ -41,8 +42,9 @@ function App() {
    <Stylesheets primary={false}/>
    <Inline/>
    <CssModules/>
-  */}
     <Form/>
+  */}
+  <LifeCycleA/>
     </div>
   );
 }
