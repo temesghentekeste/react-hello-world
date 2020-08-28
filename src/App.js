@@ -14,6 +14,7 @@ import IndexAsAKey from './components/IndexAsAKey';
 import Stylesheets from './components/Stylesheets'
 import Inline from './components/Inline';
 import CssModules from './components/CssModules';
+import Form from './components/Form'
 
 function App() {
   return (
@@ -36,11 +37,12 @@ function App() {
     <ConditionalRendering/>
     <ListRendering/>
   <IndexAsAKey/>
-  */}
    <Stylesheets primary={true}/>
    <Stylesheets primary={false}/>
    <Inline/>
    <CssModules/>
+  */}
+    <Form/>
     </div>
   );
 }

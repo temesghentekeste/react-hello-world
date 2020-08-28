@@ -107,6 +107,15 @@ Styling React components
 2. Inline Styling: ex. Inline.js
 3. CSS Modules: classes are locally scoped by default. Normal css file applies to child elements and it can lead to css confilict.  
 4. CSS In JS Libraries
+********************************************************************
+Controlled React component
+ steps
+  1. create a component state that controls the value of the input element
+  2. Assign the value of the component to the state
+  3. Handle the onchange event on the component
 
+<button type="submit">Submit</button>: type="submit" allows us to submit the page by pressing the enter key
 
+If you don't have a form you can submit the form attaching the onSubmit event to the button.
+Example: Form.js
   

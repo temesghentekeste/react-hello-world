@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+.container {
+  width: 400px;
+  margin-top: 4rem;
+}
+
+.form {
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid gray;
+  border-radius: 12px;
+  background: #eee;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+
+.input {
+  padding: 6px 8px;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 6px 8px;
+  margin: 10px auto;
+  align-self: center;
+}
+
+.form-control {
+  width: 250px;
+}
