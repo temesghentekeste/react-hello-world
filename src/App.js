@@ -16,6 +16,8 @@ import Inline from './components/Inline';
 import CssModules from './components/CssModules';
 import Form from './components/Form'
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
   return (
@@ -43,8 +45,10 @@ function App() {
    <Inline/>
    <CssModules/>
     <Form/>
-  */}
   <LifeCycleA/>
+  <FragmentDemo/>
+  */}
+  <Table/>
     </div>
   );
 }
