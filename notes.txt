@@ -229,3 +229,14 @@ Pure components
   - Pure components by avoiding unnecessary re-render can give you a performance boost in certain scenarios. Ex rendering a list of 50 items.
   - Key point to remember: you should not mutate objects or arrays in props or state rather return a new object or array. Don't push an item to a list always return a new list.
 
+  Ex. PureComponentDemo.js, RegularComponent.js and ParentPureReg.js
+  ********************************************************************
+
+  Memo: 
+    - What PureComponent is to class component, Memo is to Functional component.
+  
+    - React.memo is a HOC and it accepts a component and adds some functionalities to it.
+  Ex. MemoDemo.js
+  ********************************************************************
+
+
