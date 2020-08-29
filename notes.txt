@@ -210,4 +210,22 @@ Fragments
   - Short Syntax <> </>
   - Fragments declared with the explicit <React.Fragment> syntax may have keys. A use case for this is mapping a collection to an array of fragments
   - key is the only attribute that can be passed to Fragment
+**********************************************************************
+Pure components
+ - A second way to create class components
+ - A regular component doesn't implement shouldComponentUpdate() method, it always returns true by default.
+ - On the other hand, a pure component implements shouldComponentUpdate() method with a shallow props and state comparison.
+
+ Shallow Coparison(SC)
+  - Primitive types (numbers, strings and booleans): a (SC) b returns true if a and b have the same value and are of the same type.
+
+  - Complex types (objects, arrays, date ...): returns true if a and b references the exact same object
+
+  So, pure components perform a shallow comparison as follows`
+   SC of previousState with currentState
+   Sc of previousProp with currentProp
+   If result is different then re-render component.
+
+  - Pure components by avoiding unnecessary re-render can give you a performance boost in certain scenarios. Ex rendering a list of 50 items.
+  - Key point to remember: you should not mutate objects or arrays in props or state rather return a new object or array. Don't push an item to a list always return a new list.
 
