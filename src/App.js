@@ -23,8 +23,11 @@ import RefsDemo from './components/RefsDemo'
 import InputRefParent from './components/InputRefParent';
 import RefForwardingParent from './components/RefForwardingParent';
 import PortalsDemo from './components/PortalsDemo'
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary'
 
 function App() {
+  const heros = ['Batman', 'Superman', 'Jocker'];
   return (
     <div className="App">
      {/* 
@@ -57,8 +60,12 @@ function App() {
   <RefsDemo/>
   <InputRefParent/>
   <RefForwardingParent/>
-  */}
   <PortalsDemo/>
+  */}
+
+  {
+    heros.map( hero => <ErrorBoundary><Hero heroName={hero}/></ErrorBoundary>)
+  }
     </div>
   );
 }
