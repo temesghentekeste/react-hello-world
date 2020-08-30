@@ -253,6 +253,10 @@ Pure components
         - When a ref is passed to an element in render, a reference to the node becomes accessible at the current attribute of the ref.
 
     Ex. RefsDemo.js
+**********************************************************************
+Refs with Class component
+Ex. InputRef.js and InputRefParent.js 
+  
 
   
 

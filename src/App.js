@@ -20,6 +20,7 @@ import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import ParentPureReg from './components/ParentPureReg'
 import RefsDemo from './components/RefsDemo'
+import InputRefParent from './components/InputRefParent';
 
 function App() {
   return (
@@ -51,8 +52,9 @@ function App() {
   <FragmentDemo/>
   <Table/>
     <ParentPureReg/>
-  */}
   <RefsDemo/>
+  */}
+  <InputRefParent/>
     </div>
   );
 }
