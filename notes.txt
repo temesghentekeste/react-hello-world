@@ -258,6 +258,15 @@ Refs with Class component
 Ex. InputRef.js and InputRefParent.js 
 
 Ref Forwarding: RefForwarding.js and RefForwardingParent.js
+**********************************************************************
+
+Portals
+Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+
+ReactDOM.createPortal(child, container)
+The first argument (child) is any renderable React child, such as an element, string, or fragment. The second argument (container) is a DOM element.
+https://codesandbox.io/s/00254q4n6p
+https://codepen.io/gaearon/pen/jGBWpE
   
 
   

@@ -22,6 +22,7 @@ import ParentPureReg from './components/ParentPureReg'
 import RefsDemo from './components/RefsDemo'
 import InputRefParent from './components/InputRefParent';
 import RefForwardingParent from './components/RefForwardingParent';
+import PortalsDemo from './components/PortalsDemo'
 
 function App() {
   return (
@@ -55,8 +56,9 @@ function App() {
     <ParentPureReg/>
   <RefsDemo/>
   <InputRefParent/>
-  */}
   <RefForwardingParent/>
+  */}
+  <PortalsDemo/>
     </div>
   );
 }
