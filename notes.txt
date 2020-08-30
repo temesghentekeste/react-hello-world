@@ -238,5 +238,21 @@ Pure components
     - React.memo is a HOC and it accepts a component and adds some functionalities to it.
   Ex. MemoDemo.js
   ********************************************************************
+  Refs: 
+    - Refs provide a way to access DOM nodes or React elements created in the render method.
 
+    When to Use Refs
+      - There are a few good use cases for refs:
+        - Managing focus, text selection, or media playback.
+        - Triggering imperative animations.
+        - Integrating with third-party DOM libraries.
+    Creating Refs
+        - Refs are created using React.createRef() and attached to React elements via the ref attribute. Refs are commonly assigned to an instance property when a component is constructed so they can be referenced throughout the component.
+
+    Accessing Refs
+        - When a ref is passed to an element in render, a reference to the node becomes accessible at the current attribute of the ref.
+
+    Ex. RefsDemo.js
+
+  
 

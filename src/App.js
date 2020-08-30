@@ -19,6 +19,7 @@ import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import ParentPureReg from './components/ParentPureReg'
+import RefsDemo from './components/RefsDemo'
 
 function App() {
   return (
@@ -49,8 +50,9 @@ function App() {
   <LifeCycleA/>
   <FragmentDemo/>
   <Table/>
-  */}
     <ParentPureReg/>
+  */}
+  <RefsDemo/>
     </div>
   );
 }
