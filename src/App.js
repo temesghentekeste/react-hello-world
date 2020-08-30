@@ -21,6 +21,7 @@ import Table from './components/Table';
 import ParentPureReg from './components/ParentPureReg'
 import RefsDemo from './components/RefsDemo'
 import InputRefParent from './components/InputRefParent';
+import RefForwardingParent from './components/RefForwardingParent';
 
 function App() {
   return (
@@ -53,8 +54,9 @@ function App() {
   <Table/>
     <ParentPureReg/>
   <RefsDemo/>
-  */}
   <InputRefParent/>
+  */}
+  <RefForwardingParent/>
     </div>
   );
 }
