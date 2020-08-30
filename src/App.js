@@ -25,6 +25,8 @@ import RefForwardingParent from './components/RefForwardingParent';
 import PortalsDemo from './components/PortalsDemo'
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   const heros = ['Batman', 'Superman', 'Jocker'];
@@ -61,11 +63,12 @@ function App() {
   <InputRefParent/>
   <RefForwardingParent/>
   <PortalsDemo/>
-  */}
-
   {
     heros.map( hero => <ErrorBoundary><Hero heroName={hero}/></ErrorBoundary>)
   }
+  */}
+    <ClickCounter/>
+    <HoverCounter/>
     </div>
   );
 }
