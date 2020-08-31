@@ -34,13 +34,15 @@ import CounterTwo from './components/CounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   const heros = ['Batman', 'Superman', 'Jocker'];
   return (
     <div className="App">
-        <PostList/>
+      <PostForm/>
       {/* 
+        <PostList/>
       <UserProvider value="Temesghen">
         <ComponentC/>
       </UserProvider>

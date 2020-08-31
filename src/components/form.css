@@ -1,9 +1,13 @@
+
 h1 {
   text-align: center;
 }
 .container {
+  position: absolute;
+  top: 10%; 
+  right: 50%;
+  transform: translate(40%,10%);
   width: 400px;
-  margin-top: 4rem;
 }
 
 .form {
