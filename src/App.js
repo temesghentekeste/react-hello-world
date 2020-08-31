@@ -31,6 +31,8 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import CounterTwo from './components/CounterTwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 function App() {
   const heros = ['Batman', 'Superman', 'Jocker'];
@@ -72,7 +74,6 @@ function App() {
   }
     <HoverCounter/>
     <ClickCounter/>
-  */}
     <CounterTwo>
       {(count, incrementCount) => (
         <ClickCounterTwo count= {count} incrementCount =         {incrementCount}/>
@@ -84,6 +85,10 @@ function App() {
       )}
     </CounterTwo>
     <User render={(isLoggedIn)=>isLoggedIn ? "Temesghen" : "Guest"}/>
+  */}
+      <UserProvider value="Temesghen">
+        <ComponentC/>
+      </UserProvider>
     </div>
   );
 }
