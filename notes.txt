@@ -327,5 +327,8 @@ Context
   - A default value can be set during creation of a context. Now if you comment out the UserProvider from App.js you will see the effect and if you provide the provider with some value the default value will be overriden.
 
   - We can also use context type
-    Limitations: 1. It can only be used with class context
+    Limitations: 1. It can only be used with class component
                  2. You can only subscribe to a single context
+*********************************************************************
+React & HTTP using axios
+  ex. PostList.js

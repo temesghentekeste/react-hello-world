@@ -33,15 +33,17 @@ import User from './components/User';
 import CounterTwo from './components/CounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
 
 function App() {
   const heros = ['Batman', 'Superman', 'Jocker'];
   return (
     <div className="App">
+        <PostList/>
+      {/* 
       <UserProvider value="Temesghen">
         <ComponentC/>
       </UserProvider>
-      {/* 
      
       <Welcome name='Temesghen'/>
       <JSX/> 
