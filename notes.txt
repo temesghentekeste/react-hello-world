@@ -305,6 +305,13 @@ const enhancedComponent = higherOrderComponent(originalComponent)
 
 ex. const ironMan = withSuit(TonyStark)
 ex. ClickCounter.js, HoverCounter.js and withCounter.js
+**********************************************************************
 
+Render Props Pattern
+used to share code between components; it is similar to HOC.
+
+In react it is possible to pass in a function as a prop to control what is actually rendered by a component.
+
+The term "render prop" refers to a technique for sharing code between react components using a prop whose value is a function.
   
 

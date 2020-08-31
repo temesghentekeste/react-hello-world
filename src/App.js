@@ -27,6 +27,10 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary'
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterTwo from './components/CounterTwo';
 
 function App() {
   const heros = ['Batman', 'Superman', 'Jocker'];
@@ -66,9 +70,20 @@ function App() {
   {
     heros.map( hero => <ErrorBoundary><Hero heroName={hero}/></ErrorBoundary>)
   }
-  */}
-    <ClickCounter name="Temesghen"/>
     <HoverCounter/>
+    <ClickCounter/>
+  */}
+    <CounterTwo>
+      {(count, incrementCount) => (
+        <ClickCounterTwo count= {count} incrementCount =         {incrementCount}/>
+      )}
+    </CounterTwo>
+    <CounterTwo>
+      { (count, incrementCount) => (
+        <HoverCounterTwo count = {count} incrementCount={incrementCount}/>
+      )}
+    </CounterTwo>
+    <User render={(isLoggedIn)=>isLoggedIn ? "Temesghen" : "Guest"}/>
     </div>
   );
 }
