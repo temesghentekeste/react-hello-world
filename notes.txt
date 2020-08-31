@@ -294,9 +294,17 @@ const newComponent = higherOrderComponent(originalComponent)
 
 Typically, an HOC adds additional functionality or data to the original Component, so the newComponent can be referred as enhancedComponent
 
+Things to considere:
+  1. Passing props to the component
+  2. passing a parameter to the HOC
+
+Where do we use HOC?
+  we use it in some popular react libraries such as connect hoc in redux, router in react router and styles in Material UI.
+
 const enhancedComponent = higherOrderComponent(originalComponent)
 
 ex. const ironMan = withSuit(TonyStark)
+ex. ClickCounter.js, HoverCounter.js and withCounter.js
 
   
 

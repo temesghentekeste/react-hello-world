@@ -67,7 +67,7 @@ function App() {
     heros.map( hero => <ErrorBoundary><Hero heroName={hero}/></ErrorBoundary>)
   }
   */}
-    <ClickCounter/>
+    <ClickCounter name="Temesghen"/>
     <HoverCounter/>
     </div>
   );
