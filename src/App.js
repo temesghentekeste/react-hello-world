@@ -38,57 +38,57 @@ function App() {
   const heros = ['Batman', 'Superman', 'Jocker'];
   return (
     <div className="App">
-     {/* 
-    
-     <Welcome name='Temesghen'/>
-     <JSX/> 
-     <Message/>
-    <Hello name='Biniam' title='Electrical Engineer' />
-    <Hello name='Temesghen' title='Software Engineer'>
-       Computer science
-     </Hello>
-     <Welcome name='Biniam'>
-       Electrical engineer
-     </Welcome>
-     <Counter/>
-    <EventBinding/>
-    <Parent/>
-    <ConditionalRendering/>
-    <ListRendering/>
-  <IndexAsAKey/>
-   <Stylesheets primary={true}/>
-   <Stylesheets primary={false}/>
-   <Inline/>
-   <CssModules/>
-    <Form/>
-  <LifeCycleA/>
-  <FragmentDemo/>
-  <Table/>
-    <ParentPureReg/>
-  <RefsDemo/>
-  <InputRefParent/>
-  <RefForwardingParent/>
-  <PortalsDemo/>
-  {
-    heros.map( hero => <ErrorBoundary><Hero heroName={hero}/></ErrorBoundary>)
-  }
-    <HoverCounter/>
-    <ClickCounter/>
-    <CounterTwo>
-      {(count, incrementCount) => (
-        <ClickCounterTwo count= {count} incrementCount =         {incrementCount}/>
-      )}
-    </CounterTwo>
-    <CounterTwo>
-      { (count, incrementCount) => (
-        <HoverCounterTwo count = {count} incrementCount={incrementCount}/>
-      )}
-    </CounterTwo>
-    <User render={(isLoggedIn)=>isLoggedIn ? "Temesghen" : "Guest"}/>
-  */}
       <UserProvider value="Temesghen">
         <ComponentC/>
       </UserProvider>
+      {/* 
+     
+      <Welcome name='Temesghen'/>
+      <JSX/> 
+      <Message/>
+     <Hello name='Biniam' title='Electrical Engineer' />
+     <Hello name='Temesghen' title='Software Engineer'>
+        Computer science
+      </Hello>
+      <Welcome name='Biniam'>
+        Electrical engineer
+      </Welcome>
+      <Counter/>
+     <EventBinding/>
+     <Parent/>
+     <ConditionalRendering/>
+     <ListRendering/>
+   <IndexAsAKey/>
+    <Stylesheets primary={true}/>
+    <Stylesheets primary={false}/>
+    <Inline/>
+    <CssModules/>
+     <Form/>
+   <LifeCycleA/>
+   <FragmentDemo/>
+   <Table/>
+     <ParentPureReg/>
+   <RefsDemo/>
+   <InputRefParent/>
+   <RefForwardingParent/>
+   <PortalsDemo/>
+   {
+     heros.map( hero => <ErrorBoundary><Hero heroName={hero}/></ErrorBoundary>)
+   }
+     <HoverCounter/>
+     <ClickCounter/>
+     <CounterTwo>
+       {(count, incrementCount) => (
+         <ClickCounterTwo count= {count} incrementCount =         {incrementCount}/>
+       )}
+     </CounterTwo>
+     <CounterTwo>
+       { (count, incrementCount) => (
+         <HoverCounterTwo count = {count} incrementCount={incrementCount}/>
+       )}
+     </CounterTwo>
+     <User render={(isLoggedIn)=>isLoggedIn ? "Temesghen" : "Guest"}/>
+   */}
     </div>
   );
 }
